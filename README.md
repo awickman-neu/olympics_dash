@@ -19,3 +19,5 @@ To reproduce this project it is suggested to:
     - [html](./makefile/create_html_dashboard.py)
     - [Excel](./makefile/create_xlsx_dashboard.py)
 - 3: View your final dashboard which is located [here](./reports/)
+
+If you wish to view the final dashboard without running any code, see [here](https://awickman-neu.github.io/olympics_dash/). 
