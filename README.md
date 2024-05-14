@@ -5,7 +5,7 @@ This project's reference data is [AthleteEvents](https://www.kaggle.com/datasets
 
 **data/** contains all data used for the dashboard. [raw](../Coursework_2/data/raw/) has the data from the reference datasets, [derived](../Coursework_2/data/derived/) has the cleaned and processed datasets as .csv files, [world_countries](../Coursework_2/data/world_countries/) has a .geojson file for the world plots, and [flags](../Coursework_2/data/flags/) contains the country flag images used for plots. 
 
-**src/** contains the .py scripts for preprocessing and data visualization. [preprocessing](../Coursework_2/src/preprocessing/) contains the .py script to clean and organize the new datasets. 
+**src/** contains the .py scripts for preprocessing and data visualization. [preprocessing](../src/preprocessing/) contains the .py script to clean and organize the new datasets. 
 
 **makefile/** contains a create_html_dashboard.py file that will output the dashboard in .html format and a create_xlsx_dashboard.py that will output the dashboard in excel format. The identical scripts are available in .ipynb files. 
 
