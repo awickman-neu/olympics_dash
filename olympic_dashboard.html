@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Olympic Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+            background: #f4f4f4;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            padding: 10px 0;
+            flex-wrap: wrap;
+        }
+        .row1-plots {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 0px;
+        }
+        .row1-plot {
+            width: 100%; 
+            margin: 10px 0;
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .olympic-rings-container {
+            flex: 1 0 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .olympic-rings {
+            max-width: 80%;
+            height: auto;
+        }
+        .statistics-section {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 5px;
+        }
+        .statistic {
+            flex: 1;
+            margin: 5px;
+            padding: 5px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            max-width: 150px;
+            text-align: center;
+            max-height: 100px;
+            color: white;
+            font-weight: bold; 
+        }
+        .statistic p {
+            font-size: 22px;
+        }
+        .header-content > div, .header-content > img {
+            width: 38%;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            margin-bottom: 20px; 
+        }
+        .header h1 {
+            flex-grow: 1;
+        }
+        .header img {
+            width: 500px;
+            height: 216px;
+            flex-shrink: 0;
+        }
+        .dashboard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .dashboard-item {
+            flex: 1 1 300px;
+            max-width: 45%;
+            margin: 10px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-content">
+        <div class="row1-plots">
+            <img src="../Coursework_2/outputs/country_participation_plot.png" alt="Participation Plot - Country" class="row1-plot">
+            <img src="../Coursework_2/outputs/athlete_participation_plot.png" alt="Participation Plot - Athlete" class="row1-plot">
+        </div>
+        <div class="olympic-rings-container">
+            <img src="../Coursework_2/input_images/olympic_rings.png" alt="Olympic Rings" class="olympic-rings">
+            <h2>120 Years of the Olympic Games<br>Athens 1896 - Rio 2016</h2>
+            <div class="statistics-section">
+                <div class="statistic" style="background-color:#FFD700">
+                    <p>20123</p>
+                    <h3>Medals Won</h3>
+                </div>
+                <div class="statistic" style="background-color:#008000">
+                    <p>135571</p>
+                    <h3>Total Athletes</h3>
+                </div>
+            </div>
+            <div class="statistics-section">
+                <div class="statistic" style="background-color:#0000FF">
+                    <p>26</p>
+                    <h3>Host Cities</h3>
+                </div>
+                <div class="statistic" style="background-color:red">
+                    <p>76</p>
+                    <h3>Disciplines</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row1-plots">
+            <img src="../Coursework_2/outputs/summer_choropleth_map.png" alt="Olympic Medals Choropleth - Summer" class="row1-plot">
+            <img src="../Coursework_2/outputs/winter_choropleth_map.png" alt="Olympic Medals Choropleth - Winter" class="row1-plot">
+        </div>
+    </div>
+    <div class="dashboard">
+        <div class="dashboard-item">
+            <img src="../Coursework_2/outputs/medal_tally.png" alt="Medal Tally" class = "row1-plot">
+        </div>
+        <div class="dashboard-item">
+            <img src="../Coursework_2/outputs/athlete_measurements.png" alt="Olympic Athletes Measurements" class = "row1-plot">
+        </div>
+    </div>
+</body>
+</html>
